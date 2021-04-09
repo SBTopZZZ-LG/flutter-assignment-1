@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class TextControl extends StatelessWidget {
-  final Function onPressHandler;
+  final Function _onPressHandler;
 
-  TextControl(this.onPressHandler);
+  TextControl(this._onPressHandler);
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-        onPressed: onPressHandler,
+    return OutlinedButton(
+        onPressed: _onPressHandler,
         child: Text(
           "Change text",
           style: TextStyle(fontSize: 18),
